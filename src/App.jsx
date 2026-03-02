@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { auth, db } from './config/firebase';
-import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from './config/firebase'';
 import ExpenseForm from './components/ExpenseForm';
 import ExpenseList from './components/ExpenseList';
 import CategoryManager from './components/CategoryManager';
@@ -8,8 +7,7 @@ import './App.css';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
-  const [user, setUser] = useState(null);
-  const [expenses, setExpenses] = useState([]);
+  const [, setUser] = useState(null);  const [expenses, setExpenses] = useState([]);
   const [categories, setCategories] = useState(['Milk', 'Cab Fare', 'Ginger', 'BlinkIt', 'Facebook Ads']);
 
   useEffect(() => {
