@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { auth, onAuthStateChanged } from './config/firebase';
-;import ExpenseForm from './components/ExpenseForm';
+import { auth } from './config/firebase'
+  import { onAuthStateChanged } from 'firebase/auth';
+  ;;import ExpenseForm from './components/ExpenseForm';
 import ExpenseList from './components/ExpenseList';
 import CategoryManager from './components/CategoryManager';
 import './App.css';
