@@ -3,7 +3,6 @@ import { collection, addDoc, getDocs, deleteDoc, doc, query } from 'firebase/fir
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const EXPENSES_COLLECTION = 'expenses';
-const DRIVE_FOLDER_ID = process.env.REACT_APP_GOOGLE_DRIVE_FOLDER_ID;
 
 export const addExpenseToDatabase = async (expense) => {
   try {
